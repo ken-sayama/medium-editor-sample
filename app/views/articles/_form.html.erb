@@ -18,10 +18,15 @@
 
   <div class="field">
     <%= form.label :body %>
-    <%= form.text_area :body, id: :article_body %>
+    <%= form.text_area :body, id: :article_body, class: 'editable' %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+<script>
+  var editor = new MediumEditor('.editable', {
+    // options go here
+  });
+</script>
