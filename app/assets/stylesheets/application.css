@@ -13,5 +13,6 @@
  *= require_tree .
  *= require medium-editor/medium-editor
  *= require medium-editor/themes/tim
+ *= require medium-editor-insert-plugin
  *= require_self
  */

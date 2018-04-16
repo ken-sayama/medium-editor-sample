@@ -13,4 +13,5 @@
 //= require rails-ujs
 //= require turbolinks
 //= require medium-editor
+//= require medium-editor-insert-plugin
 //= require_tree .
