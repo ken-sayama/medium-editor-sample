@@ -43,6 +43,15 @@ group :development, :test do
   # medium editor
   gem 'medium-editor-rails'
   gem 'medium-editor-insert-plugin-rails'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-byebug'
+  gem 'awesome_print'
+  gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-rails'
 end
 
 group :development do
