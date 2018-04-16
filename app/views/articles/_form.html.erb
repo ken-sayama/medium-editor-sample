@@ -1,4 +1,4 @@
-<%= form_with(model: article, local: true) do |form| %>
+<%= form_with(model: article, local: true, class: 'siimple-form') do |form| %>
   <% if article.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
@@ -11,18 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :article_title %>
+  <div class="siimple-form-field">
+    <%= form.label :title, class: 'siimple-label' %>
+    <%= form.text_field :title, id: :article_title, class: 'siimple-input' %>
   </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :article_body, class: 'editable' %>
+  <div class="siimple-form-field">
+    <%= form.label :body, class: 'siimple-label' %>
+    <%= form.text_area :body, id: :article_body, class: 'editable siimple-textarea siimple-textarea--fluid' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="siimple-form-field">
+    <%= form.submit class: 'siimple-btn siimple-btn--blue' %>
   </div>
 <% end %>
 <script>
