@@ -39,6 +39,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # medium editor
+  gem 'medium-editor-rails'
+  gem 'medium-editor-insert-plugin-rails'
 end
 
 group :development do
