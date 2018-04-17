@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :images
   resources :articles
 
   post 'images/upload', to: 'images#upload'
