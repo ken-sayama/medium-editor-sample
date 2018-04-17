@@ -58,6 +58,10 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (>= 2.0, < 4.0)
+    carrierwave (1.2.2)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.2)
@@ -73,11 +77,6 @@ GEM
     debug_inspector (0.0.3)
     erubi (1.7.1)
     execjs (2.7.0)
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
-      railties (>= 3.0.0)
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -100,6 +99,9 @@ GEM
     medium-editor-rails (2.3.1)
       railties (>= 3.0)
     method_source (0.9.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -210,8 +212,8 @@ DEPENDENCIES
   binding_of_caller
   byebug
   capybara (~> 2.13)
+  carrierwave
   coffee-rails (~> 4.2)
-  factory_girl_rails
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   medium-editor-insert-plugin-rails
