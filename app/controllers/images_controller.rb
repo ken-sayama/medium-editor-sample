@@ -9,6 +9,7 @@ class ImagesController < ApplicationController
       if @image.save
         format.html { redirect_to @image, notice: 'Image was successfully created.' }
         format.json do
+          binding.pry
           render json: {
             files:
               [
@@ -18,7 +19,7 @@ class ImagesController < ApplicationController
                   name: @image.file_identifier,
                   type: "image/jpeg",
                   size: 0,
-                  delete_url: "your_delete_url",
+                  delete_url: "/images/#{@image.original_filename}",
                   delete_type: "DELETE"
                 }
               ]
@@ -29,5 +30,9 @@ class ImagesController < ApplicationController
         format.json { render json: @image.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def destroy
+    binding.pry
   end
 end
