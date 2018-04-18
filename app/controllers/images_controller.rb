@@ -4,9 +4,10 @@ class ImagesController < ApplicationController
 
     @image = Image.new
     @image.file = files[0]
-
+    binding.pry
     respond_to do |format|
       if @image.save
+        binding.pry
         format.html { redirect_to @image, notice: 'Image was successfully created.' }
         format.json do
           render json: {
@@ -24,7 +25,9 @@ class ImagesController < ApplicationController
               ]
           }
         end
+        binding.pry
       else
+        binding.pry
         format.html { render :new }
         format.json { render json: @image.errors, status: :unprocessable_entity }
       end
