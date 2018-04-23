@@ -14,4 +14,5 @@
 //= require turbolinks
 //= require medium-editor
 //= require medium-editor-insert-plugin
+//= require cloudinary
 //= require_tree .

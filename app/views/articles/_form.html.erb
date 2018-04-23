@@ -42,6 +42,13 @@
             url: '/images/upload',
             type: 'post',
             acceptFileTypes: /(.|\/)(gif|jpe?g|png)$/i
+          },
+          fileDeleteOptions: {
+            url: '/images/delete',
+          },
+          messages: {
+            acceptFileTypesError: 'This file is not in a supported format: ',
+            maxFileSizeError: 'This file is too big: '
           }
         }
       }
