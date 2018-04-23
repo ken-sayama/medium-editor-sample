@@ -17,7 +17,3 @@ test:
   api_secret: <%= ENV["CLOUDINARY_API_SECRET"] %>
   enhance_image_tag: true
   static_image_support: false
-
-# CLOUDINARY_CLOUD_NAME='welks-inc'
-# CLOUDINARY_API_KEY='739267578485416'
-# CLOUDINARY_API_SECRET='cr_E2kXHRheeWpKaxev7dtM_8b0'
