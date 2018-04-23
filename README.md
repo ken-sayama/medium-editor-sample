@@ -1,24 +1,32 @@
-# README
+This repository is a sample of medium-editor running on Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Configration
 
-Things you may want to cover:
+> I used [Cloudinary](https://cloudinary.com/) for image storage.
+> If you want to try this sample, you need to get a Cloudinary account.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+Add `.env` file.
 
-* Database creation
+You need set up `.env` like this
 
-* Database initialization
+```
+CLOUDINARY_CLOUD_NAME='your cloud name'
+CLOUDINARY_API_KEY='your api key'
+CLOUDINARY_API_SECRET='your api secret'
+```
 
-* How to run the test suite
+## Quick Start
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bundle install
 
-* Deployment instructions
+$ rails db:create
 
-* ...
+$ rails db:migrate
+
+$ rails server
+```
+
+all done.
