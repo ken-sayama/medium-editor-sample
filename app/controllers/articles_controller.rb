@@ -5,11 +5,19 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @articles }
+    end
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.json { render json: @article }
+    end
   end
 
   # GET /articles/new
